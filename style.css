@@ -1,41 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
-        font-family: "Nerko One", cursive;
-        font-style: normal;
-   outline: none;
-  }
+    font-style: normal;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
 
 body {
-    margin: auto;
-    padding:0;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+ 
+    width: 100%;
 
 }
 
-header{
-    font-size: 20px;
-    padding: 5px;
-    margin: px;
-    color: #ffff;
-    background-color: #4d008b;
-    flex-direction: row;
-    
-
-
-}
-header img {
+header {
+    font-size: 16px;
+    background-color: #311354;
+    color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 5px;
-    border-radius: 50px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+
+
+header img {
+    margin-right: 10px;
+    border-radius: 50%;
+    
 }
 
 .slider {
@@ -160,7 +160,7 @@ header img {
 
 .container {
     background-color: #d1d1d1;
-    width: 500px;
+    width: 100%;
     border-radius: 20px;
     padding: 20px;
     margin: 0 auto 0;
@@ -169,26 +169,37 @@ header img {
   }
 
   .input-task {
-    border: none;
-    border-radius: 10px;
-    width: 300px;
+   border: 2px solid #ccc;
+    border-radius: 50px;
     height: 40px;
-    padding-left: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    padding: 15px;
+    margin-top: 10px;
+    transition: border-color 0.3s;
     align-items: center;
   
   }
 
+  .input-task:focus {
+    border-color: #311354;
+}
+
   .button-add-task {
     border: none;
-    border-radius: 5px;
-    height: px;
-    background-color: blueviolet;
-    color: blanchedalmond;
-    font-size: 17px;
-    padding: 8px;
-    float: right;
+    border-radius: 50px;
+    height: 40px;
+    background-color: rgb(105, 4, 126);
+    color: rgb(248, 248, 248);
+    font-size: 14px;
+    padding: 15px;
     cursor: pointer;
-    align-items: center;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(85, 3, 102);
   
   }
 
@@ -218,9 +229,7 @@ header img {
     border-radius: 5px 20px 5px;
     margin-bottom: 20px;
     cursor: pointer;
-
-  
-  
+   
   }
 
   .task:hover img {
@@ -235,11 +244,17 @@ header img {
 }
   
   .done {
-    background-color: #4d008b;
+    background-color: #311354;
     text-decoration: line-through;
   
   }
 
+  footer{
+    background-color: #311354;
+    color: antiquewhite;
+    width: 100%;
+    font-size: 10px;
+  }
   footer{
     background-color: #4d008b;
     color: antiquewhite;
